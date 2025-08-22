@@ -9,7 +9,7 @@ eleventyNavigation:
 
 ntsc-rs is available as a plugin for Adobe After Effects and Adobe Premiere.
 
-For a guide on building the plugin, see [the documentation in the code itself](https://github.com/valadaptive/ntsc-rs/blob/main/crates/ae-plugin/README.md) and [the more general build instructions](../building-from-source).
+For a guide on building the plugin, see [the build instructions](../building-from-source).
 
 ## Installation (Windows)
 
