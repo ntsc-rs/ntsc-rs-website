@@ -33,3 +33,15 @@ This is not unique to ntsc-rs; most software, including **every major web browse
 ## Can I use ntsc-rs on 32-bit PCs? {#32-bit}
 
 ntsc-rs is 64-bit, and would probably run much slower on 32-bit hardware. Good news, though: any PC that supports Windows 10 or up (see above), or any supported macOS version, is 64-bit. If you're still running a 32-bit operating system, you can and should install the 64-bit version of that operating system instead. This will allow you to run 64-bit software (which a lot of software is nowadays, including games), and will probably run a bit faster as well.
+
+## Why does ntsc-rs crash my computer? {#crash}
+
+I've received a few reports of ntsc-rs crashing people's computers ([#91](https://github.com/valadaptive/ntsc-rs/issues/91), [#340](https://github.com/valadaptive/ntsc-rs/issues/340), [#392](https://github.com/valadaptive/ntsc-rs/issues/392)). If ntsc-rs can crash your entire computer, it's a problem with your operating system or hardware.
+
+This is true by definition because of the way operating systems work. All modern operating systems are designed to isolate separate programs and prevent badly-behaving programs from interfering with the entire system. This is why a program that freezes will only crash itself instead of bringing down the whole computer.
+
+The operating system itself is also completely isolated from the programs it runs. [This is a key security feature.](https://en.wikipedia.org/wiki/Protection_ring) Only the operating system and device drivers are capable of doing hardware-level things like shutting down your computer. This means that if a regular application without any admin privileges can crash your computer, the operating system is not working as intended.
+
+With all that being said, ntsc-rs is a complex and hardware-intensive program. It contains [many different codecs](https://gstreamer.freedesktop.org/) for reading and writing a multitude of video formats, and the effect itself makes use of advanced CPU features to run as fast as possible.
+
+If ntsc-rs is crashing your entire computer, there are a couple of things you can try. Firstly, if your system is overclocked, try disabling or reducing it--an overclock that seems stable when gaming or browsing the web may fail under sustained load. Secondly, try installing the latest OS updates. Since any OS-level crash caused by an application is a security vulnerability by definition, OS developers will want to fix those issues as quickly as possible.
