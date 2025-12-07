@@ -34,7 +34,7 @@ export default [{
         '@stylistic/comma-style': ['error'],
         '@stylistic/eol-last': ['error', 'always'],
         eqeqeq: ['warn'],
-        '@stylistic/func-call-spacing': ['error', 'never'],
+        '@stylistic/function-call-spacing': ['error', 'never'],
 
         '@stylistic/indent': ['error', 4, {
             SwitchCase: 1
@@ -79,14 +79,14 @@ export default [{
         '@stylistic/object-curly-spacing': ['error'],
 
         '@stylistic/object-property-newline': ['error', {
-            allowMultiplePropertiesPerLine: true
+            allowAllPropertiesOnSameLine: true
         }],
 
         '@stylistic/operator-linebreak': ['error', 'after'],
         'prefer-const': ['error'],
 
         '@stylistic/quotes': ['error', 'single', {
-            allowTemplateLiterals: true,
+            allowTemplateLiterals: 'always',
             avoidEscape: true
         }],
 
@@ -98,7 +98,7 @@ export default [{
         '@stylistic/space-unary-ops': ['error']
     }
 }, {
-    files: ['.eleventy.js', 'eslint.config.mjs'],
+    files: ['.eleventy.js', 'eslint.config.mjs', 'gen-hero.js'],
 
     languageOptions: {
         globals: {
