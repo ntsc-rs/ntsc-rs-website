@@ -196,9 +196,10 @@ code {
     padding: 1rem;
     display: flex;
     align-items: center;
+    color: inherit;
 
-    & img {
-        height: 1.5rem;
+    & svg {
+        height: 2rem;
         width: auto;
     }
 }
