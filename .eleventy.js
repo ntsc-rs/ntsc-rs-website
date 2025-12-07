@@ -5,12 +5,28 @@ import * as cheerio from 'cheerio';
 import * as esbuild from 'esbuild';
 import * as pagefind from 'pagefind';
 import markdownItAttrs from 'markdown-it-attrs';
+import postcss from 'postcss';
+import postcssUrl from 'postcss-url';
+import cssnano from 'cssnano';
 
 import {eleventyImageTransformPlugin} from '@11ty/eleventy-img';
 import eleventyNavigationPlugin from '@11ty/eleventy-navigation';
 import {RenderPlugin} from '@11ty/eleventy';
 import Fetch from '@11ty/eleventy-fetch';
 Fetch.concurrency = 1;
+
+const postcssConfig = {
+    plugins: [
+        postcssUrl({
+            url: 'inline',
+            maxSize: 0,
+            filter: '**/*.svg',
+            fallback: 'copy',
+        }),
+        cssnano({preset: 'default'}),
+    ],
+    options: {},
+};
 
 // Cache latest release from GitHub to avoid excess API requests
 const apiResponse = (async() => {
@@ -155,18 +171,45 @@ export default function(eleventyConfig) {
     eleventyConfig.addTemplateFormats('scss');
     eleventyConfig.addExtension('scss', {
         outputFileExtension: 'css',
-        compile(inputContent, inputPath) {
+        async compile(inputContent, inputPath) {
             const parsed = path.parse(inputPath);
-            const result = sass.compileString(inputContent, {
+            const sassResult = sass.compileString(inputContent, {
                 loadPaths: [
                     parsed.dir || '.',
                     this.config.dir.includes
                 ]
             });
 
-            this.addDependencies(inputPath, result.loadedUrls);
+            this.addDependencies(inputPath, sassResult.loadedUrls);
+            let outputPromise;
 
-            return () => result.css;
+            return async() => {
+                if (!outputPromise) {
+                    outputPromise = (async() => {
+                        const {plugins, options} = postcssConfig;
+                        const processor = postcss(plugins);
+
+                        const postcssOptions = {...options};
+                        if (!postcssOptions.from) postcssOptions.from = inputPath;
+                        if (!postcssOptions.to) {
+                            const cssPath = path.join(parsed.dir, `${parsed.name}.css`);
+                            postcssOptions.to = cssPath;
+                        }
+
+                        const postcssResult = await processor.process(sassResult.css, postcssOptions);
+
+                        for (const message of postcssResult.messages) {
+                            if (message.type === 'dependency' && message.file) {
+                                this.addDependencies(inputPath, [message.file]);
+                            }
+                        }
+
+                        return postcssResult.css;
+                    })();
+                }
+
+                return outputPromise;
+            };
         }
     });
 
