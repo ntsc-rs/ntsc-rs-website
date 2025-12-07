@@ -19,6 +19,8 @@ try {
     tempDir = await fs.mkdtemp('herothumb');
     const thumbPath = join(tempDir, 'herothumb.png');
     await heroImage.resize(256, null, {}).toFile(thumbPath);
+    // sharp includes an AVIF encoder, but it only works with bit depth 8. That causes horrible color banding in the
+    // hero image, so we need to shell out to avifenc.
     await Promise.all([
         spawn('avifenc', ['-s', '2', heroPath, 'src/assets/images/hero.avif']),
         spawn('avifenc', ['-s', '0', '--depth', '8', '-q', '50', thumbPath, 'src/assets/images/herothumb.avif']),
