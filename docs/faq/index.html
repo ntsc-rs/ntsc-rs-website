@@ -21,8 +21,8 @@
             <ul class="navigation-pages">
                 <li><a class="navigation-docs  active " href="/docs/getting-started/">Documentation</a></li>
                 <li><a class="navigation-download " href="/download/">Download</a></li>
-                <li><a class="external" href="https://github.com/valadaptive/ntsc-rs/discussions"><span class="external-link">Discussions</span></a></li>
-                <li><a class="external" href="https://github.com/valadaptive/ntsc-rs"><span class="external-link">GitHub</span></a></li>
+                <li><a class="external" href="https://github.com/ntsc-rs/ntsc-rs/discussions"><span class="external-link">Discussions</span></a></li>
+                <li><a class="external" href="https://github.com/ntsc-rs/ntsc-rs"><span class="external-link">GitHub</span></a></li>
             </ul>
             <div id="search-area">
                 <div id="search">
@@ -68,7 +68,7 @@
 <h2 id="32-bit">Can I use ntsc-rs on 32-bit PCs?</h2>
 <p>ntsc-rs is 64-bit, and would probably run much slower on 32-bit hardware. Good news, though: any PC that supports Windows 10 or up (see above), or any supported macOS version, is 64-bit. If you're still running a 32-bit operating system, you can and should install the 64-bit version of that operating system instead. This will allow you to run 64-bit software (which a lot of software is nowadays, including games), and will probably run a bit faster as well.</p>
 <h2 id="crash">Why does ntsc-rs crash my computer?</h2>
-<p>I've received a few reports of ntsc-rs crashing people's computers (<a href="https://github.com/valadaptive/ntsc-rs/issues/91" class="external-link">#91</a>, <a href="https://github.com/valadaptive/ntsc-rs/issues/340" class="external-link">#340</a>, <a href="https://github.com/valadaptive/ntsc-rs/issues/392" class="external-link">#392</a>). If ntsc-rs can crash your entire computer, it's a problem with your operating system or hardware.</p>
+<p>I've received a few reports of ntsc-rs crashing people's computers (<a href="https://github.com/ntsc-rs/ntsc-rs/issues/91" class="external-link">#91</a>, <a href="https://github.com/ntsc-rs/ntsc-rs/issues/340" class="external-link">#340</a>, <a href="https://github.com/ntsc-rs/ntsc-rs/issues/392" class="external-link">#392</a>). If ntsc-rs can crash your entire computer, it's a problem with your operating system or hardware.</p>
 <p>This is true by definition because of the way operating systems work. All modern operating systems are designed to isolate separate programs and prevent badly-behaving programs from interfering with the entire system. This is why a program that freezes will only crash itself instead of bringing down the whole computer.</p>
 <p>The operating system itself is also completely isolated from the programs it runs. <a href="https://en.wikipedia.org/wiki/Protection_ring" class="external-link">This is a key security feature.</a> Only the operating system and device drivers are capable of doing hardware-level things like shutting down your computer. This means that if a regular application without any admin privileges can crash your computer, the operating system is not working as intended.</p>
 <p>With all that being said, ntsc-rs is a complex and hardware-intensive program. It contains <a href="https://gstreamer.freedesktop.org/" class="external-link">many different codecs</a> for reading and writing a multitude of video formats, and the effect itself makes use of advanced CPU features to run as fast as possible.</p>
