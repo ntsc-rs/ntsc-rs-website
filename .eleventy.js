@@ -21,16 +21,16 @@ const postcssConfig = {
             url: 'inline',
             maxSize: 0,
             filter: '**/*.svg',
-            fallback: 'copy',
+            fallback: 'copy'
         }),
-        cssnano({preset: 'default'}),
+        cssnano({preset: 'default'})
     ],
-    options: {},
+    options: {}
 };
 
 // Cache latest release from GitHub to avoid excess API requests
 const apiResponse = (async() => {
-    const response = await Fetch('https://api.github.com/repos/valadaptive/ntsc-rs/releases/latest', {
+    const response = await Fetch('https://api.github.com/repos/ntsc-rs/ntsc-rs/releases/latest', {
         duration: '15m',
         type: 'json',
         fetchOptions: {
@@ -51,7 +51,7 @@ const renderWhatsNew = async function() {
     const requestBody = JSON.stringify({
         text,
         mode: 'gfm',
-        context: 'valadaptive/ntsc-rs'
+        context: 'ntsc-rs/ntsc-rs'
     });
 
     let html = await Fetch('https://api.github.com/markdown', {

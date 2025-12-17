@@ -36,7 +36,7 @@ ntsc-rs is 64-bit, and would probably run much slower on 32-bit hardware. Good n
 
 ## Why does ntsc-rs crash my computer? {#crash}
 
-I've received a few reports of ntsc-rs crashing people's computers ([#91](https://github.com/valadaptive/ntsc-rs/issues/91), [#340](https://github.com/valadaptive/ntsc-rs/issues/340), [#392](https://github.com/valadaptive/ntsc-rs/issues/392)). If ntsc-rs can crash your entire computer, it's a problem with your operating system or hardware.
+I've received a few reports of ntsc-rs crashing people's computers ([#91](https://github.com/ntsc-rs/ntsc-rs/issues/91), [#340](https://github.com/ntsc-rs/ntsc-rs/issues/340), [#392](https://github.com/ntsc-rs/ntsc-rs/issues/392)). If ntsc-rs can crash your entire computer, it's a problem with your operating system or hardware.
 
 This is true by definition because of the way operating systems work. All modern operating systems are designed to isolate separate programs and prevent badly-behaving programs from interfering with the entire system. This is why a program that freezes will only crash itself instead of bringing down the whole computer.
 

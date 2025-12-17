@@ -39,7 +39,7 @@ $ sudo apt-get install libgstreamer1.0 gstreamer1.0-plugins-base gstreamer1.0-pl
 
 The command for installing GStreamer is the same as on Ubuntu, but note that some versions of GStreamer from Debian's repositories may not work.
 
-Notably, [the version of GStreamer in debian bullseye/"oldstable" errors out when using the FFV1 codec](https://github.com/valadaptive/ntsc-rs/issues/224), and [the version of GStreamer from the deb-multimedia.org repository does not contain the x264 codec](https://github.com/valadaptive/ntsc-rs/issues/307).
+Notably, [the version of GStreamer in debian bullseye/"oldstable" errors out when using the FFV1 codec](https://github.com/ntsc-rs/ntsc-rs/issues/224), and [the version of GStreamer from the deb-multimedia.org repository does not contain the x264 codec](https://github.com/ntsc-rs/ntsc-rs/issues/307).
 
 To ensure ntsc-rs functions properly, use Debian bookworm/"stable" or newer, and make sure you're not using a version of GStreamer from the deb-multimedia.org repository.
 

@@ -27,7 +27,7 @@ If you're not building the OpenFX plugin, you can ignore this part.
 
 Make sure to include submodules when cloning the repository if you want the OpenFX plugin to build properly:
 ```
-git clone --recurse-submodules https://github.com/valadaptive/ntsc-rs.git
+git clone --recurse-submodules https://github.com/ntsc-rs/ntsc-rs.git
 cd ntsc-rs
 ```
 
