@@ -48,7 +48,6 @@
         background-color: white;
         mask-image: var(--icon-arrow-left);
         mask-size: auto 100%;
-        mask-position: util.sprite_pos(4);
         transform: rotate(-90deg);
     }
 }
