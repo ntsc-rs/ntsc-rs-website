@@ -34,6 +34,16 @@ This is not unique to ntsc-rs; most software, including **every major web browse
 
 ntsc-rs is 64-bit, and would probably run much slower on 32-bit hardware. Good news, though: any PC that supports Windows 10 or up (see above), or any supported macOS version, is 64-bit. If you're still running a 32-bit operating system, you can and should install the 64-bit version of that operating system instead. This will allow you to run 64-bit software (which a lot of software is nowadays, including games), and will probably run a bit faster as well.
 
+## Why doesn't ntsc-rs include an on-screen display (OSD)?
+
+Many people have requested that I add on-screen display (OSD) emulation to ntsc-rs. This is the part that displays things like play/pause icons, text, timecodes, and such atop the image.
+
+Firstly, adding an OSD would require adding a way to control what it says. If you want to switch between different icons (play, pause, etc) then you need to implement keyframing. The standalone ntsc-rs app will never have keyframing, since it is not meant to be general-purpose video editing software.
+
+Secondly, on-screen displays are unique to each model of VCR. The positioning of text, exact shapes of icons, and fonts are all extremely varied. I could choose to hardcode a specific set of icons and fonts, and deal with a constant influx of requests to add more. Or I could add a way to let people add arbitrary graphics (like text and icons) on top of footage, which is *already implemented* in real video editing software.
+
+If you want to render arbitrary text and graphics on top of your footage, you should use video editing software. ntsc-rs is available in plugin form and compatible with most editors. I recommend DaVinci Resolve, which is free.
+
 ## Why does ntsc-rs crash my computer? {#crash}
 
 I've received a few reports of ntsc-rs crashing people's computers ([#91](https://github.com/ntsc-rs/ntsc-rs/issues/91), [#340](https://github.com/ntsc-rs/ntsc-rs/issues/340), [#392](https://github.com/ntsc-rs/ntsc-rs/issues/392)). If ntsc-rs can crash your entire computer, it's a problem with your operating system or hardware.
