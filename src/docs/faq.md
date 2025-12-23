@@ -34,7 +34,7 @@ This is not unique to ntsc-rs; most software, including **every major web browse
 
 ntsc-rs is 64-bit, and would probably run much slower on 32-bit hardware. Good news, though: any PC that supports Windows 10 or up (see above), or any supported macOS version, is 64-bit. If you're still running a 32-bit operating system, you can and should install the 64-bit version of that operating system instead. This will allow you to run 64-bit software (which a lot of software is nowadays, including games), and will probably run a bit faster as well.
 
-## Why doesn't ntsc-rs include an on-screen display (OSD)?
+## Why doesn't ntsc-rs include an on-screen display (OSD)? {#osd}
 
 Many people have requested that I add on-screen display (OSD) emulation to ntsc-rs. This is the part that displays things like play/pause icons, text, timecodes, and such atop the image.
 
