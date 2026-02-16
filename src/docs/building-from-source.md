@@ -59,14 +59,14 @@ After installing Rust and cloning the repository, the steps are platform-specifi
    ```
    # Build the standalone app (the output will be `target/release/ntsc-rs-standalone`)
    # Note that `ntsc-rs-launcher` won't work--it's only meant for the downloadable distribution
-   cargo build -p gui --release
+   cargo build -p ntsc-rs-gui --release
 
    # Build the OpenFX plugin (the output will be `crates/openfx-plugin/build/NtscRs.ofx.bundle`)
    cargo xtask build-ofx-plugin --release
 
    # Build the After Effects plugin (the output will be `target/release/ae_plugin.dll`)
    # To install it, copy + rename the .dll to `C:\Program Files\Adobe\Common\Plug-ins\7.0\MediaCore\ntsc-rs-ae.aex`
-   cargo build -p ae-plugin --release
+   cargo build -p ntsc-rs-ae-plugin --release
    ```
 </details>
 
@@ -117,7 +117,7 @@ After installing Rust and cloning the repository, the steps are platform-specifi
 3. Build the standalone app and OpenFX plugin:
    ```
    # Build the standalone app (the output will be `target/release/ntsc-rs-standalone`)
-   cargo build -p gui --release
+   cargo build -p ntsc-rs-gui --release
 
    # To build the OpenFX plugin (output will be in `crates/openfx-plugin/build`)
    cargo xtask build-ofx-plugin --release
