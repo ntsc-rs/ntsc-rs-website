@@ -27,6 +27,13 @@
     line-height: 1;
 }
 
+#hero-buttons-portrait {
+    display: none;
+    text-align: center;
+    padding: 1.5rem 1rem 0;
+    gap: 0.5rem;
+}
+
 .skip-to-content {
     position: absolute;
     left: 50%;
@@ -88,9 +95,14 @@
         gap: 1rem;
     }
 
-    .skip-to-content {
-        left: 1rem;
-        transform: none;
+    .hero-text .button {
+        display: none;
+    }
+
+    #hero-buttons-portrait {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
 
