@@ -21,6 +21,7 @@
             <ul class="navigation-pages">
                 <li><a class="navigation-docs " href="/docs/getting-started/">Documentation</a></li>
                 <li><a class="navigation-download  active " href="/download/">Download</a></li>
+                <li><a class="external" href="//web.ntsc.rs"><span class="external-link">Web app</span></a></li>
                 <li><a class="external" href="https://github.com/ntsc-rs/ntsc-rs/discussions"><span class="external-link">Discussions</span></a></li>
                 <li><a class="external" href="https://github.com/ntsc-rs/ntsc-rs"><span class="external-link">GitHub</span></a></li>
             </ul>
@@ -37,7 +38,7 @@
 <section id="hero">
     <div class="hero-bg">
         <div class="hero-text">
-            <div class="hero-header">Download ntsc‑rs v0.9.3</div>
+            <div class="hero-header">Download ntsc‑rs v0.9.4</div>
             <select id="os-menu" class="button">
                 
                 <option value="windows">Windows</option>
@@ -50,15 +51,15 @@
             
                 <div class="os-buttons windows active">
                     
-                        <a rel="noreferrer" download="" class="download-button button dark-mode" href="https://github.com/ntsc-rs/ntsc-rs/releases/download/v0.9.3/ntsc-rs-windows-standalone.zip" data-docs-url="/docs/standalone-installation/">
+                        <a rel="noreferrer" download="" class="download-button button dark-mode" href="https://github.com/ntsc-rs/ntsc-rs/releases/download/v0.9.4/ntsc-rs-windows-standalone.zip" data-docs-url="/docs/standalone-installation/">
                             <div class="dist-name">Standalone application</div>
                         </a>
                     
-                        <a rel="noreferrer" download="" class="download-button button dark-mode" href="https://github.com/ntsc-rs/ntsc-rs/releases/download/v0.9.3/ntsc-rs-windows-openfx.zip" data-docs-url="/docs/openfx-plugin/">
+                        <a rel="noreferrer" download="" class="download-button button dark-mode" href="https://github.com/ntsc-rs/ntsc-rs/releases/download/v0.9.4/ntsc-rs-windows-openfx.zip" data-docs-url="/docs/openfx-plugin/">
                             <div class="dist-name">OpenFX plugin</div>
                         </a>
                     
-                        <a rel="noreferrer" download="" class="download-button button dark-mode" href="https://github.com/ntsc-rs/ntsc-rs/releases/download/v0.9.3/ntsc-rs-windows-afterfx.zip" data-docs-url="/docs/after-effects-plugin/">
+                        <a rel="noreferrer" download="" class="download-button button dark-mode" href="https://github.com/ntsc-rs/ntsc-rs/releases/download/v0.9.4/ntsc-rs-windows-afterfx.zip" data-docs-url="/docs/after-effects-plugin/">
                             <div class="dist-name">After Effects/Premiere plugin</div>
                         </a>
                     
@@ -66,15 +67,15 @@
             
                 <div class="os-buttons macos ">
                     
-                        <a rel="noreferrer" download="" class="download-button button dark-mode" href="https://github.com/ntsc-rs/ntsc-rs/releases/download/v0.9.3/ntsc-rs-macos-standalone.pkg" data-docs-url="/docs/standalone-installation/">
+                        <a rel="noreferrer" download="" class="download-button button dark-mode" href="https://github.com/ntsc-rs/ntsc-rs/releases/download/v0.9.4/ntsc-rs-macos-standalone.pkg" data-docs-url="/docs/standalone-installation/">
                             <div class="dist-name">Standalone application</div>
                         </a>
                     
-                        <a rel="noreferrer" download="" class="download-button button dark-mode" href="https://github.com/ntsc-rs/ntsc-rs/releases/download/v0.9.3/ntsc-rs-macos-openfx.pkg" data-docs-url="/docs/openfx-plugin/">
+                        <a rel="noreferrer" download="" class="download-button button dark-mode" href="https://github.com/ntsc-rs/ntsc-rs/releases/download/v0.9.4/ntsc-rs-macos-openfx.pkg" data-docs-url="/docs/openfx-plugin/">
                             <div class="dist-name">OpenFX plugin</div>
                         </a>
                     
-                        <a rel="noreferrer" download="" class="download-button button dark-mode" href="https://github.com/ntsc-rs/ntsc-rs/releases/download/v0.9.3/ntsc-rs-macos-afterfx.pkg" data-docs-url="/docs/after-effects-plugin/">
+                        <a rel="noreferrer" download="" class="download-button button dark-mode" href="https://github.com/ntsc-rs/ntsc-rs/releases/download/v0.9.4/ntsc-rs-macos-afterfx.pkg" data-docs-url="/docs/after-effects-plugin/">
                             <div class="dist-name">After Effects/Premiere plugin</div>
                         </a>
                     
@@ -82,11 +83,11 @@
             
                 <div class="os-buttons linux ">
                     
-                        <a rel="noreferrer" download="" class="download-button button dark-mode" href="https://github.com/ntsc-rs/ntsc-rs/releases/download/v0.9.3/ntsc-rs-linux-standalone.zip" data-docs-url="/docs/standalone-installation/">
+                        <a rel="noreferrer" download="" class="download-button button dark-mode" href="https://github.com/ntsc-rs/ntsc-rs/releases/download/v0.9.4/ntsc-rs-linux-standalone.zip" data-docs-url="/docs/standalone-installation/">
                             <div class="dist-name">Standalone application</div>
                         </a>
                     
-                        <a rel="noreferrer" download="" class="download-button button dark-mode" href="https://github.com/ntsc-rs/ntsc-rs/releases/download/v0.9.3/ntsc-rs-linux-openfx.zip" data-docs-url="/docs/openfx-plugin/">
+                        <a rel="noreferrer" download="" class="download-button button dark-mode" href="https://github.com/ntsc-rs/ntsc-rs/releases/download/v0.9.4/ntsc-rs-linux-openfx.zip" data-docs-url="/docs/openfx-plugin/">
                             <div class="dist-name">OpenFX plugin</div>
                         </a>
                     
@@ -137,15 +138,35 @@
 
     <div class="gfm">
         <h1>What's new</h1>
-<ul>
-<li>
-<p>Fixed ntsc-rs no longer working on recent versions of Adobe Premiere and After Effects on macOS (<a class="issue-link js-issue-link" data-id="2973896618" data-url="https://github.com/ntsc-rs/ntsc-rs/issues/308" href="https://github.com/ntsc-rs/ntsc-rs/issues/308">#308</a>). I owe a massive thank you to <a class="user-mention notranslate" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mobile-bungalow">@mobile-bungalow</a> for debugging and fixing this issue!</p>
-<p>The fix <em>should</em> work, but leave a comment on that issue if you're still having trouble getting ntsc-rs to show up in Premiere or After Effects on macOS.</p>
-</li>
-<li>
-<p>Fixed crashes in the OpenFX plugin caused by missing error checks. This affected Nuke and possibly other editing software as well.</p>
-</li>
-</ul>
+<p>Sorry I haven't been as active on this project lately. I've been working on other things for the past several months, but I've still found time to add a few features and fix some bugs.</p>
+<h2>Folders for presets</h2>
+<p>The preset manager now properly displays folders:</p>
+<details open="" class="details-reset border rounded-2">
+  <summary class="tmp-px-3 py-2">
+    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-device-camera-video">
+    <path d="M16 3.75v8.5a.75.75 0 0 1-1.136.643L11 10.575v.675A1.75 1.75 0 0 1 9.25 13h-7.5A1.75 1.75 0 0 1 0 11.25v-6.5C0 3.784.784 3 1.75 3h7.5c.966 0 1.75.784 1.75 1.75v.675l3.864-2.318A.75.75 0 0 1 16 3.75Zm-6.5 1a.25.25 0 0 0-.25-.25h-7.5a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-6.5ZM11 8.825l3.5 2.1v-5.85l-3.5 2.1Z"></path>
+</svg>
+    <span class="m-1">folders.mp4</span>
+    <span class="dropdown-caret"></span>
+  </summary>
+
+  <video src="/assets/gh_attachments/565919916-491f1b1b-b3d7-4f92-840d-141a67010215.mp4" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px">
+
+  </video>
+</details>
+
+<h2>More optimization</h2>
+<p>I've been optimizing various parts of ntsc-rs for the past few months, and the effect should now be <strong>30-35% faster!</strong></p>
+<p>Video rendering speed won't speed up by that much, because the bottleneck there is in video encoding. However, the live preview should be a lot faster.</p>
+<p>As always, the best way to improve performance <em>and</em> faithful 1990s accuracy is to <strong>resize your videos to 480p.</strong></p>
+<h2>Check for updates</h2>
+<p>In the "Help" menu, you can now check for updates from within ntsc-rs itself!</p>
+<p>This is <strong>not</strong> an auto-updater. ntsc-rs will <strong>never</strong> connect to the internet by itself or "phone home", and will only make a network request if you click "check for updates".</p>
+<h2>Web version!</h2>
+<p>This is where much of the development effort has been going. Many people have asked for a version of ntsc-rs that runs on mobile devices and web browsers, and cutting-edge web APIs now make it possible!</p>
+<p>There are many limitations compared to the desktop version, but it's great if you're using a mobile device or Chromebook. <a href="https://web.ntsc.rs/" rel="nofollow" class="external-link">Try it out now!</a></p>
+<hr>
+<p><strong>For installation instructions and further guidance, see <a href="https://ntsc.rs/docs/getting-started/" rel="nofollow" class="external-link">the Getting Started guide on the ntsc-rs website</a>.</strong></p>
     </div>
 </div>
 

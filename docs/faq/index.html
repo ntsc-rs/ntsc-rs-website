@@ -21,6 +21,7 @@
             <ul class="navigation-pages">
                 <li><a class="navigation-docs  active " href="/docs/getting-started/">Documentation</a></li>
                 <li><a class="navigation-download " href="/download/">Download</a></li>
+                <li><a class="external" href="//web.ntsc.rs"><span class="external-link">Web app</span></a></li>
                 <li><a class="external" href="https://github.com/ntsc-rs/ntsc-rs/discussions"><span class="external-link">Discussions</span></a></li>
                 <li><a class="external" href="https://github.com/ntsc-rs/ntsc-rs"><span class="external-link">GitHub</span></a></li>
             </ul>
@@ -53,13 +54,14 @@
         <h1>Frequently Asked Questions</h1>
         <h2 id="audio-effect">Does ntsc-rs include an audio effect?</h2>
 <p>No. I don't have any experience with audio processing, and others have already done a far better job than I could. If you're looking for a realistic emulation of VHS audio, I'd recommend <a href="https://chowdsp.com/products.html#tape" class="external-link">the Chow Tape Model effect</a>.</p>
-<h2 id="more-platforms">Can I use ntsc-rs on Android, iOS, or the Web?</h2>
-<p>Unfortunately, none of those platforms are supported at the moment. It's unlikely that apps for iOS or Android will ever be released, but in the long term, it's possible that I'll make an ntsc-rs webapp.</p>
+<h2 id="more-platforms">Can I use ntsc-rs on Android or iOS?</h2>
+<p>Unfortunately, neither of those platforms are supported. It's unlikely that apps for iOS or Android will ever be released.</p>
 <p>Mobile platforms are a chore to develop for:</p>
 <ul>
 <li>On the Android side, Google is notorious for deprecating their libraries every couple of years, forcing you onto the treadmill of rewriting your software over and over.</li>
 <li>On the iOS side, Apple makes you fork over $99/yr for the privilege of being allowed on the App Store. I don't have any iOS hardware to test on, either.</li>
 </ul>
+<p>If you want to use ntsc-rs on your mobile device, your best bet is the <a href="//web.ntsc.rs">web app</a>.</p>
 <h2 id="ntscqt">Is ntsc-rs like ntscQT?</h2>
 <p>Yes. I developed ntsc-rs as a "faster ntscQT", and added new features from there. ntscQT has since been officially discontinued, and ntsc-rs is one of its recommended replacements. To learn more, see <a href="/docs/ntscqt-migration">the migration guide</a>.</p>
 <h2 id="windows-7">I'm on Windows 7. Why doesn't ntsc-rs work?</h2>
