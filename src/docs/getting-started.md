@@ -7,9 +7,9 @@ eleventyNavigation:
   order: 0
 ---
 
-ntsc-rs is available as a standalone application, an OpenFX plugin, and an After Effects / Premiere plugin.
+ntsc-rs is available as a [web app](//web.ntsc.rs), a standalone application, an OpenFX plugin, and an After Effects / Premiere plugin.
 
-<h2>Installation</h2>
+## Installation {#installation}
 
 After you download ntsc-rs from [the downloads page](/download), it should redirect you to the appropriate installation instructions. If not, here are the instructions for:
 

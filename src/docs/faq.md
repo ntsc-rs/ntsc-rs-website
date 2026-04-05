@@ -13,14 +13,14 @@ No. I don't have any experience with audio processing, and others have already d
 
 ## Can I use ntsc-rs on Android or iOS? {#more-platforms}
 
-Unfortunately, neither of those platforms are supported. It's unlikely that apps for iOS or Android will ever be released.
+If you want to use ntsc-rs on your mobile device, your best bet is the [web app](//web.ntsc.rs). The [web app documentation](/docs/web-app) tells you how to add it to your home screen, and it works offline too.
+
+However, there are no *native* ntsc-rs apps for Android or iOS, and there likely never will be.
 
 Mobile platforms are a chore to develop for:
 
 - On the Android side, Google is notorious for deprecating their libraries every couple of years, forcing you onto the treadmill of rewriting your software over and over.
 - On the iOS side, Apple makes you fork over $99/yr for the privilege of being allowed on the App Store. I don't have any iOS hardware to test on, either.
-
-If you want to use ntsc-rs on your mobile device, your best bet is the [web app](//web.ntsc.rs).
 
 ## Is ntsc-rs like ntscQT? {#ntscqt}
 
