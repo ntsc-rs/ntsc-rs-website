@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="en"><head>
+        <meta charset="UTF-8">
+        <link rel="preload" href="/style.css" as="style">
+        
+        <title>Web App · ntsc-rs</title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="icon" href="/assets/images/icon.svg">
+        
+        <meta name="description" content="Use the ntsc-rs VHS effect online in your browser. Apply a realistic analog TV and VHS look to images and videos for free. No download or account required.">
+        
+        <link rel="canonical" href="https://ntsc.rs/docs/web-app/">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="/assets/main.js" defer="" async=""></script>
+        <script src="/js/search.js" defer="" async="" type="module"></script>
+    </head>
+    <body>
+        <div id="navigation-bar">
+            <a href="/" class="navbar-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="304" height="64" viewBox="0 0 304 64"><defs><clipPath id="b"><rect width="64" height="64" rx="8"></rect></clipPath></defs><g fill="currentColor" transform="translate(0,1)"><path d="m80 17v30h6V25.572L107 47h6V17h-6v21.428L86 17z"></path><path d="m116 17 3 6h8v24h6V23h10l-3-6z"></path><path d="m187 26c0-1.6569 1.3431-3 3-3h23l-3-6h-20c-4.9706 0-9 4.0294-9 9v12c0 4.9706 4.0294 9 9 9h23l-3-6h-20c-1.6569 0-3-1.3431-3-3z"></path><path d="m254 35c4.9706 0 9-4.0294 9-9 0-4.9706-4.0294-9-9-9h-23l3 6h20c1.6568 0 3 1.3431 3 3s-1.3432 3-3 3h-14c-4.9706 0-9 4.0294-9 9v9h6v-9c0-1.6569 1.3431-3 3-3z"></path><path d="m248.8 32 8.333 15h6.8642l-8.3335-15z"></path><path d="m211 29h14l3 6h-14z"></path><path id="a" d="m154 35c-4.9706 0-9-4.0294-9-9 0-4.9706 4.0294-9 9-9h19l3 6h-22c-1.6569 0-3 1.3431-3 3s1.3431 3 3 3h14c4.9706 0 9 4.0294 9 9 0 4.9706-4.0294 9-9 9l-20-1.13e-4-3-6L168 41c1.6568 0 3-1.3431 3-3s-1.3432-3-3-3z" fill="currentColor"></path></g><use transform="translate(122,1)" href="#a"></use><g clip-path="url(#b)"><path d="m-16 32h48v48h-48z" fill="#dfdecf"></path><path d="m16 32h32v48H16z" fill="#908ca3"></path><path d="m32 32h32v48H32z" fill="#342c40"></path><path d="m48 32h32v48H48z" fill="#160b26"></path><path d="m-16-16h48v64h-48z" fill="#521955"></path><path d="m16-16h32v64H16z" fill="#dc263c"></path><path d="m32-16h32v64H32z" fill="#ff9b00"></path><path d="m48-16h32v64H48z" fill="#ffed47"></path></g></svg>
+            </a>
+            <ul class="navigation-pages">
+                <li><a class="navigation-docs  active " href="/docs/getting-started/">Documentation</a></li>
+                <li><a class="navigation-download " href="/download/">Download</a></li>
+                <li><a class="external" href="//web.ntsc.rs"><span class="external-link">Web app</span></a></li>
+                <li><a class="external" href="https://github.com/ntsc-rs/ntsc-rs/discussions"><span class="external-link">Discussions</span></a></li>
+                <li><a class="external" href="https://github.com/ntsc-rs/ntsc-rs"><span class="external-link">GitHub</span></a></li>
+            </ul>
+            <div id="search-area">
+                <div id="search">
+                    <input id="search-input" type="text" placeholder="Search" disabled="">
+                    <button class="icon-button close" id="search-clear" title="Clear search"></button>
+                </div>
+                <button class="icon-button search" id="search-open" title="Search"></button>
+            </div>
+        </div>
+        <div id="search-results-container"></div>
+        
+<div class="nav-cols"><details class="navigation-details" open="">
+        <summary class="navigation-summary">Navigation</summary>
+        <div class="navigation-sidebar">
+            <ul><li><a href="/docs/getting-started/">Getting Started</a></li>
+<li><a href="/docs/faq/">Frequently Asked Questions</a></li>
+<li><a href="/docs/standalone-application/">Standalone Application</a><ul><li><a href="/docs/standalone-installation/">Installation</a></li>
+<li><a href="/docs/standalone-tips/">Tips, Tricks, &amp; Shortcuts</a></li></ul></li>
+<li><a href="/docs/openfx-plugin/">OpenFX Plugin</a></li>
+<li><a href="/docs/web-app/" class="navigation-active">Web App</a></li>
+<li><a href="/docs/after-effects-plugin/">After Effects / Premiere Plugin</a></li>
+<li><a href="/docs/command-line-interface/">Command-line interface</a></li>
+<li><a href="/docs/macos-installation/">Installing ntsc-rs on macOS</a></li>
+<li><a href="/docs/building-from-source/">Building ntsc-rs from source</a></li>
+<li><a href="/docs/ntscqt-migration/">Migrating from ntscQT</a></li></ul>
+        </div>
+    </details>
+    <div id="content" data-pagefind-body="">
+        <h1>Web App</h1>
+        <p>The <a href="//web.ntsc.rs">ntsc-rs web app</a> lets you apply a realistic VHS and analog TV effect to your images and videos entirely online, in your browser.</p>
+<p>The web app is fully self-contained. You don't have to download anything, no account is required, and your images and videos never leave your device.</p>
+<h2>Features</h2>
+<ul>
+<li>
+<p>Works on desktop and mobile. The UI works well in portrait mode too. If you're looking for an easy VHS effect that you can run on a mobile device, ntsc-rs fits the bill.</p>
+</li>
+<li>
+<p>Fully self-contained; no sign-up or account required. All processing is done on your device, and nothing is ever uploaded to a server.</p>
+</li>
+<li>
+<p>A true app-like experience. While you don't need to install anything to use the web app, you can still <em>choose</em> to install it from your browser on many platforms. It even works offline once you've loaded it for the first time.</p>
+</li>
+</ul>
+<h2>Use as an app</h2>
+<p>While the ntsc-rs web does not <em>require</em> installing anything, you may find it useful to use it as an app. It works identically offline, and you can access it conveniently from your home screen.</p>
+<ul>
+<li>
+<p><strong>iOS, Safari:</strong> Follow Apple's guide for <a href="https://support.apple.com/en-mide/guide/iphone/iphea86e5236/26/ios/26" class="external-link">using a website as an app on iOS</a>.</p>
+</li>
+<li>
+<p><strong>macOS, Safari:</strong> Follow Apple's guide for <a href="https://support.apple.com/en-mide/104996" class="external-link">using a website as an app on macOS</a>. Note that the ntsc-rs desktop application and plugins <em>are</em> available for macOS. If possible, you should <a href="/download">download</a> and <a href="/docs/macos-installation">install</a> those instead.</p>
+</li>
+<li>
+<p><strong>All platforms, Chrome:</strong> Follow Google's guide for <a href="https://support.google.com/chrome/answer/9658361" class="external-link">installing a web app or adding it to your home screen</a>. This guide contains instructions for Android, iOS, and desktop.</p>
+</li>
+<li>
+<p><strong>Android, Firefox:</strong> Follow Mozilla's guide for <a href="https://support.mozilla.org/en-US/kb/use-web-apps-firefox-android" class="external-link">installing a web app</a>.</p>
+</li>
+<li>
+<p><strong>All other platforms, Firefox:</strong> Web app installation is not supported in non-Android versions of Firefox.</p>
+</li>
+</ul>
+<h2 id="compatibility">Browser and device compatibility</h2>
+<p>The ntsc-rs web app uses cutting-edge web technologies to perform all processing in your browser. However, the "cutting-edge" part <em>does</em> mean that you need an up-to-date browser, and the browsers themselves might have bugs.</p>
+<p>In particular, the app uses WebAssembly and Web Codecs. While WebAssembly is pretty well-supported, Web Codecs is still somewhat spotty. Many browsers' implementations may contain bugs.</p>
+<p>At the time of writing, here are the browser compatibility issues you should be aware of:</p>
+<ul>
+<li>
+<p><strong>Safari (and all browsers on iOS):</strong> Some videos may not display properly. This seems to be an issue in Safari. You can use another browser on macOS. Unfortunately, there is no real workaround for this on iOS--all browsers on the App Store actually use Safari's engine internally, and will suffer from the same issues.</p>
+</li>
+<li>
+<p><strong>Firefox for Android:</strong> Cannot load or save any videos at all. Use Chrome instead.</p>
+</li>
+<li>
+<p><strong>Firefox (desktop):</strong> Video encoding is a fair bit slower than Chrome.</p>
+</li>
+</ul>
+<h2 id="web-vs-desktop">When to use the web app vs. the desktop version</h2>
+<p>The web app is great for quick edits and for use on devices where you can't install software. For batch processing, higher performance, or integration into a video editing workflow, use the <a href="/docs/standalone-application/">standalone application</a> or one of the editor plugins.</p>
+
+    </div>
+</div>
+
+    
+
+</body></html>
