@@ -43,10 +43,17 @@ After installing Rust and cloning the repository, the steps are platform-specifi
 <details>
 <summary>Windows</summary>
 
-1. Download and run the [MSVC versions of the runtime and development GStreamer installers](https://gstreamer.freedesktop.org/download/#windows) (only necessary for the standalone application).
-   - For H.264 encoding, you'll need to change the installation options, and select "GStreamer 1.0 codecs under the GPL license and/or with patents issues", "GStreamer 1.0 restricted codecs with potential patent issues in some countries", "GStreamer 1.0 libav wrapper", and "GStreamer 1.0 plugins for encoding". Probably only one of those is necessary, but I'm not sure which one.
+1. Download and run the [MSVC version of the GStreamer installer](https://gstreamer.freedesktop.org/download/#windows) (only necessary for the standalone application). For most PCs, you'll want "MSVC x86_64".
 
-      <img src="/assets/images/gst-win-install.png" alt="The GStreamer Windows installer." class="thumbnail" style="width: 260px">
+   When you get to the "Select Components" part of the installer, make sure you select the **"Runtime and development headers" option** from the **menu at the top.**
+
+   For H.264 encoding, ensure the following items are selected (they should be by default, but just make sure):
+   - GStreamer 1.0 codecs under the GPL license
+   - GStreamer 1.0 codecs under the GPL license + with patent issues
+   - GStreamer 1.0 restricted codecs with potential patent issues in some countries
+   - GStreamer 1.0 libav wrapper
+
+   <img src="/assets/images/gst-win-install.png" alt="The GStreamer Windows installer." class="thumbnail" style="width: 260px">
 
 2. If you installed GStreamer, follow their [instructions for setting the `PATH` environment variable](https://crates.io/crates/gstreamer#windows).
    Currently, those instructions don't provide instructions for PowerShell--in such a case, you can set `PATH` via:
@@ -73,11 +80,13 @@ After installing Rust and cloning the repository, the steps are platform-specifi
 <details>
 <summary>macOS</summary>
 
-1. Install [brew](https://brew.sh/) and use it to install GStreamer (only necessary for the standalone application):
-   ```
-   brew install --cask gstreamer-runtime
-   brew install --cask gstreamer-development
-   ```
+1. Download and install both the [**runtime** and **development** GStreamer packages for macOS](https://gstreamer.freedesktop.org/download/#macos).
+
+   For H.264 encoding, when you get to the **"Installation Type"** step in each installer, click **Customize**, and ensure the following components are enabled:
+   - GStreamer 1.0 codecs under the GPL license
+   - GStreamer 1.0 codecs under the GPL license + with patent issues
+   - GStreamer 1.0 restricted codecs with potential patent issues in some countries
+   - GStreamer 1.0 libav wrapper
 
 2. Add the GStreamer tooling to your PATH (only necessary for the standalone application):
    ```
