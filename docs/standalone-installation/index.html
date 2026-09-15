@@ -56,7 +56,15 @@
         <p>After downloading the correct version of ntsc-rs for your platform, you can run it by following the steps for your platform:</p>
 <h2 id="installation-windows">Windows</h2>
 <p>The GUI requires <a href="https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022" class="external-link">the Microsoft Visual C++ Redistributable</a>. Since a lot of other software does too, you probably already have it installed, but if you get an error about VCRUNTIME140.dll being missing, you need to install it.</p>
-<p>After downloading the ZIP file, extract the <em>entire contents</em> of the ZIP file to a folder of your choice. If you don't do this, the application won't run.</p>
+<p>Please make sure you follow these <strong>very important instructions</strong>:</p>
+<ul>
+<li>
+<p>After downloading the ZIP file, extract the <strong>entire contents</strong> of the ZIP file to a local folder of your choice. It is important to <strong>extract</strong> all of the files before running anything.</p>
+</li>
+<li>
+<p>Make sure you extract ntsc-rs to a <strong>local</strong> folder, and <strong>not</strong> a folder that is synced to the cloud via OneDrive, Google Drive, Dropbox, or any other cloud storage provider. If you try to run ntsc-rs from a folder that is managed by a cloud storage provider, there will be a ton of mysterious errors and crashes.</p>
+</li>
+</ul>
 <p>To run the application, run the <code>ntsc-rs-launcher</code> file. If it does not open, you may need to run the <code>ntsc-rs-standalone</code> file in the <code>bin</code> folder.</p>
 <h2 id="installation-macos">macOS</h2>
 <p>Follow <a href="../macos-installation">these instructions</a> for running the installer. After installation, the standalone application can be found in your Applications folder.</p>
