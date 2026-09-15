@@ -2,21 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>https://ntsc.rs/</loc>
-            <lastmod>2026-04-05T04:17:01.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://ntsc.rs/download/</loc>
-            <lastmod>2026-04-05T04:17:01.000Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>https://ntsc.rs/docs/standalone-application/</loc>
-            <lastmod>2025-01-21T16:55:23.000Z</lastmod>
-        </url>
-    
-        <url>
             <loc>https://ntsc.rs/docs/standalone-tips/</loc>
             <lastmod>2025-01-20T11:45:55.000Z</lastmod>
         </url>
@@ -64,6 +49,21 @@
         <url>
             <loc>https://ntsc.rs/docs/after-effects-plugin/</loc>
             <lastmod>2025-08-22T15:03:08.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://ntsc.rs/docs/standalone-application/</loc>
+            <lastmod>2025-01-21T16:55:23.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://ntsc.rs/</loc>
+            <lastmod>2026-04-05T04:17:01.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://ntsc.rs/download/</loc>
+            <lastmod>2026-04-05T04:17:01.000Z</lastmod>
         </url>
     
         <url>
