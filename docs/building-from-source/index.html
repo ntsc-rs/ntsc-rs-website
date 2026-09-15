@@ -76,13 +76,16 @@ cd ntsc-rs
 <summary>Windows</summary>
 <ol>
 <li>
-<p>Download and run the <a href="https://gstreamer.freedesktop.org/download/#windows" class="external-link">MSVC versions of the runtime and development GStreamer installers</a> (only necessary for the standalone application).</p>
+<p>Download and run the <a href="https://gstreamer.freedesktop.org/download/#windows" class="external-link">MSVC version of the GStreamer installer</a> (only necessary for the standalone application). For most PCs, you'll want "MSVC x86_64".</p>
+<p>When you get to the "Select Components" part of the installer, make sure you select the <strong>"Runtime and development headers" option</strong> from the <strong>menu at the top.</strong></p>
+<p>For H.264 encoding, ensure the following items are selected (they should be by default, but just make sure):</p>
 <ul>
-<li>
-<p>For H.264 encoding, you'll need to change the installation options, and select "GStreamer 1.0 codecs under the GPL license and/or with patents issues", "GStreamer 1.0 restricted codecs with potential patent issues in some countries", "GStreamer 1.0 libav wrapper", and "GStreamer 1.0 plugins for encoding". Probably only one of those is necessary, but I'm not sure which one.</p>
- <img src="/assets/images/JpkLGuSdR--495.webp" alt="The GStreamer Windows installer." class="thumbnail" style="width: 260px" loading="lazy" decoding="async" width="495" height="387">
-</li>
+<li>GStreamer 1.0 codecs under the GPL license</li>
+<li>GStreamer 1.0 codecs under the GPL license + with patent issues</li>
+<li>GStreamer 1.0 restricted codecs with potential patent issues in some countries</li>
+<li>GStreamer 1.0 libav wrapper</li>
 </ul>
+<img src="/assets/images/kfav0hPfbF-750.webp" alt="The GStreamer Windows installer." class="thumbnail" style="width: 260px" loading="lazy" decoding="async" width="750" height="567">
 </li>
 <li>
 <p>If you installed GStreamer, follow their <a href="https://crates.io/crates/gstreamer#windows" class="external-link">instructions for setting the <code>PATH</code> environment variable</a>.
@@ -111,10 +114,14 @@ cargo build -p ntsc-rs-ae-plugin --release
 <summary>macOS</summary>
 <ol>
 <li>
-<p>Install <a href="https://brew.sh/" class="external-link">brew</a> and use it to install GStreamer (only necessary for the standalone application):</p>
-<pre><code>brew install --cask gstreamer-runtime
-brew install --cask gstreamer-development
-</code></pre>
+<p>Download and install both the <a href="https://gstreamer.freedesktop.org/download/#macos" class="external-link"><strong>runtime</strong> and <strong>development</strong> GStreamer packages for macOS</a>.</p>
+<p>For H.264 encoding, when you get to the <strong>"Installation Type"</strong> step in each installer, click <strong>Customize</strong>, and ensure the following components are enabled:</p>
+<ul>
+<li>GStreamer 1.0 codecs under the GPL license</li>
+<li>GStreamer 1.0 codecs under the GPL license + with patent issues</li>
+<li>GStreamer 1.0 restricted codecs with potential patent issues in some countries</li>
+<li>GStreamer 1.0 libav wrapper</li>
+</ul>
 </li>
 <li>
 <p>Add the GStreamer tooling to your PATH (only necessary for the standalone application):</p>
