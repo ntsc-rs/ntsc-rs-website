@@ -14,7 +14,11 @@ After downloading the correct version of ntsc-rs for your platform, you can run 
 
 The GUI requires <a href="https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022">the Microsoft Visual C++ Redistributable</a>. Since a lot of other software does too, you probably already have it installed, but if you get an error about VCRUNTIME140.dll being missing, you need to install it.
 
-After downloading the ZIP file, extract the <em>entire contents</em> of the ZIP file to a folder of your choice. If you don't do this, the application won't run.
+Please make sure you follow these **very important instructions**:
+
+- After downloading the ZIP file, extract the **entire contents** of the ZIP file to a local folder of your choice. It is important to **extract** all of the files before running anything.
+
+- Make sure you extract ntsc-rs to a **local** folder, and **not** a folder that is synced to the cloud via OneDrive, Google Drive, Dropbox, or any other cloud storage provider. If you try to run ntsc-rs from a folder that is managed by a cloud storage provider, there will be a ton of mysterious errors and crashes.
 
 To run the application, run the `ntsc-rs-launcher` file. If it does not open, you may need to run the `ntsc-rs-standalone` file in the `bin` folder.
 
