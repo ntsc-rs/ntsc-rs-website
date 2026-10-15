@@ -22,5 +22,3 @@ Another reason is usability--aside from the speed benefits allowing a live previ
 ntsc-rs v0.9.1 and up supports loading ntscQT presets directly. Click the "📝" button in the bottom left of the ntscQT window to copy your settings, and paste them into ntsc-rs. You can also load them directly from files (just like ntsc-rs presets) in ntsc-rs.
 
 The mapping is not one-to-one. Some settings in ntsc-rs behave differently from ntscQT, and some things are implemented differently and approximated when translating the settings into the ntsc-rs format. You may need to make further adjustments.
-
-Note that one default setting in ntscQT is **inaccurate**: the "Scanline phase shift" setting. For real NTSC footage, it is always 180 degrees. However, most ntscQT presets have it set to 90 degrees. **For the best accuracy, change the "Scanline phase shift" setting to "180 degrees" after importing your ntscQT preset!**
